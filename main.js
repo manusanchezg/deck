@@ -1,1 +1,1 @@
-import { Deck } from "./deck/deck.js";
+export { Deck } from "./deck/deck.js";
