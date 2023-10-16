@@ -1,0 +1,20 @@
+{
+  "name": "deck",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "poker cards deck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manusanchezg/deck.git"
+  },
+  "author": "Manuel Sanchez German",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manusanchezg/deck/issues"
+  },
+  "homepage": "https://github.com/manusanchezg/deck#readme"
+}
