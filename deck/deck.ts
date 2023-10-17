@@ -2,21 +2,23 @@ import { Card } from "../card/card.js";
 import { SUITS, VALUES } from "../constants/constants.js";
 
 export class Deck {
-  constructor(cards = this.freshDeck()) {
-    this.cards = cards;
+  cards: Card[];
+
+  constructor(cards?: Card[]) {
+    this.cards = cards || this.freshDeck();
   }
 
-  get numberOfCards() {
+  get numberOfCards(): number {
     return this.cards.length;
   }
-  freshDeck() {
+  private freshDeck(): Card[] {
     return SUITS.flatMap((suit) => {
       return VALUES.map((value) => {
         return new Card(suit, value);
       });
     });
   }
-  shuffle() {
+  shuffle(): void {
     for (let i = this.numberOfCards - 1; i > 0; i--) {
       const newIndex = Math.floor(Math.random() * (i + 1));
       const oldValue = this.cards[newIndex];
