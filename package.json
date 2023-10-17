@@ -1,11 +1,11 @@
 {
   "name": "cards-deck",
   "version": "1.2.0",
-  "type": "module",
   "description": "poker cards deck",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist"
   },
   "repository": {
     "type": "git",
