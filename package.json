@@ -1,5 +1,5 @@
 {
-  "name": "deck",
+  "name": "cards-deck",
   "version": "1.0.0",
   "type": "module",
   "description": "poker cards deck",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/manusanchezg/deck/issues"
   },
-  "homepage": "https://github.com/manusanchezg/deck#readme"
+  "homepage": "https://github.com/manusanchezg/deck#readme",
+  "keywords": [
+    "deck",
+    "cards",
+    "poker"
+  ]
 }
