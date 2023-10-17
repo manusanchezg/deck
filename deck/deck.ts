@@ -1,5 +1,5 @@
-import { Card } from "../card/card.js";
-import { SUITS, VALUES } from "../constants/constants.js";
+import { Card } from "../card/card";
+import { SUITS, VALUES } from "../constants/constants";
 
 export class Deck {
   cards: Card[];
@@ -12,8 +12,8 @@ export class Deck {
     return this.cards.length;
   }
   private freshDeck(): Card[] {
-    return SUITS.flatMap((suit) => {
-      return VALUES.map((value) => {
+    return SUITS.flatMap((suit: string) => {
+      return VALUES.map((value: string) => {
         return new Card(suit, value);
       });
     });
