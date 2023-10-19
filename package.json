@@ -1,8 +1,7 @@
 {
   "name": "cards-deck",
-  "version": "1.3.3",
+  "version": "1.4.3",
   "description": "poker cards deck",
-  "typings": "./deck.d.ts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,5 +24,8 @@
   ],
   "devDependencies": {
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cards-deck": "^1.3.3"
   }
 }

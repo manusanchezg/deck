@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Deck = void 0;
+exports.Values = exports.Suits = exports.Card = exports.Deck = void 0;
 var deck_1 = require("./deck/deck");
-var deck_2 = require("./deck/deck");
-Object.defineProperty(exports, "Deck", { enumerable: true, get: function () { return deck_2.Deck; } });
-var deck = new deck_1.Deck();
-console.log(deck.cards);
+Object.defineProperty(exports, "Deck", { enumerable: true, get: function () { return deck_1.Deck; } });
+var card_1 = require("./card/card");
+Object.defineProperty(exports, "Card", { enumerable: true, get: function () { return card_1.Card; } });
+var constants_1 = require("./constants/constants");
+Object.defineProperty(exports, "Suits", { enumerable: true, get: function () { return constants_1.Suits; } });
+Object.defineProperty(exports, "Values", { enumerable: true, get: function () { return constants_1.Values; } });
