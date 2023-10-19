@@ -1,6 +1,6 @@
 {
   "name": "cards-deck",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "poker cards deck",
   "main": "index.js",
   "scripts": {
