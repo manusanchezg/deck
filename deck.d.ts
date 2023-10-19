@@ -1,4 +1,4 @@
-declare module "deck" {
+declare module "Card" {
   export interface Suits {
     spade: "♠";
     club: "♣";
