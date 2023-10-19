@@ -1,5 +1,5 @@
 import { Card } from "../card/card";
-import { SUITS, VALUES } from "../constants/constants";
+import { JOKER, SUITS, VALUES } from "../constants/constants";
 
 export class Deck {
   cards: Card[];
@@ -12,12 +12,15 @@ export class Deck {
     return this.cards.length;
   }
   private freshDeck(): Card[] {
-    return SUITS.flatMap((suit: string) => {
+    const jokers: Card[] = [new Card(JOKER, "0"), new Card(JOKER, "0")];
+    const standardDeck: Card[] = SUITS.flatMap((suit: string) => {
       return VALUES.map((value: string) => {
         return new Card(suit, value);
       });
     });
+    return standardDeck.concat(jokers)
   }
+  // using Fisher-Yates shuffle algorithm
   shuffle(): void {
     for (let i = this.numberOfCards - 1; i > 0; i--) {
       const newIndex = Math.floor(Math.random() * (i + 1));

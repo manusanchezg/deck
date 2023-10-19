@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.VALUES = exports.SUITS = void 0;
+exports.VALUES = exports.JOKER = exports.SUITS = void 0;
 exports.SUITS = ["♠", "♣", "♦", "♥"];
+exports.JOKER = "JOKER";
 exports.VALUES = [
     "A",
     "2",

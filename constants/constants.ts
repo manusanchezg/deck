@@ -1,4 +1,5 @@
 export const SUITS: string[] = ["♠", "♣", "♦", "♥"];
+export const JOKER: string = "JOKER"
 export const VALUES: string[] = [
   "A",
   "2",

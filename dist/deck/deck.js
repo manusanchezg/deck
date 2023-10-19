@@ -15,12 +15,15 @@ var Deck = /** @class */ (function () {
         configurable: true
     });
     Deck.prototype.freshDeck = function () {
-        return constants_1.SUITS.flatMap(function (suit) {
+        var jokers = [new card_1.Card(constants_1.JOKER, "0"), new card_1.Card(constants_1.JOKER, "0")];
+        var standardDeck = constants_1.SUITS.flatMap(function (suit) {
             return constants_1.VALUES.map(function (value) {
                 return new card_1.Card(suit, value);
             });
         });
+        return standardDeck.concat(jokers);
     };
+    // using Fisher-Yates shuffle algorithm
     Deck.prototype.shuffle = function () {
         for (var i = this.numberOfCards - 1; i > 0; i--) {
             var newIndex = Math.floor(Math.random() * (i + 1));
